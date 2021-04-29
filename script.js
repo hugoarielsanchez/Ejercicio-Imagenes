@@ -1,6 +1,6 @@
 const btnAgregarCaja = document.getElementById("btnAgregar");
 const contenedor = document.getElementById("contenedor");
-const input = document.getElementById("texto");
+const inputText = document.getElementById("texto");
 const inputImagen = document.getElementById("Imagen");
 const divGrande = document.getElementById("vistaGrande");
 const imgGrande = document.getElementById("imgGrande");
@@ -21,14 +21,16 @@ btnAgregarCaja.addEventListener("click", function(){
 
     const nuevoP = document.createElement('p');
     nuevoP.classList.add('titulo');
-    nuevoP.textContent = input.value
+    nuevoP.textContent = inputText.value
 
     cajaNueva.appendChild(nuevaImg);
     cajaNueva.appendChild(nuevoP);
     contenedor.appendChild(cajaNueva);
+
+    inputText.value ='';
+    inputImagen.value ='';
 })
 
 btnCerrar.addEventListener("click", function() {
     divGrande.classList.remove('mostrarDiv');
 })
-
