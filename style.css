@@ -1,0 +1,42 @@
+p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    color: rgb(31, 1, 1);
+}
+
+.titulo{
+    font-family: fantasy;
+    font-size: 15px;
+    color: firebrick;
+    margin-top: 5px;
+    margin-left: 8px;
+}
+
+#contenedor{
+    margin-top: 20px;
+}
+
+.caja{
+    margin: 10px;
+    padding-bottom: 30px;
+    width: 150px;
+    height: 150px;
+    border: 1px solid burlywood;
+    display: inline-block;
+}
+
+.divImgGrande{
+    display: none;
+}
+
+.mostrarDiv{
+    display: block;
+    position: absolute;
+    top: 20%;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
